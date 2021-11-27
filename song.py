@@ -36,7 +36,8 @@ def addSong(day, currentTime, usedSongs, song, songTime):
 	currentTime += songTime
 	usedSongs.append(song)
 
-def generateDay(day, name):
+def generateDay(name):
+	day = []
 	currentTime = 0
 	usedSongs = []
 	currentArtistList = []
@@ -86,18 +87,10 @@ def generateDay(day, name):
 	print("\n")
 
 
-monday = []
-tuesday = []
-wednsday = []
-thursday = []
-friday = []
-saturday = []
-sunday = []
-
-generateDay(monday, "Monday")
-generateDay(tuesday, "Tuesday")
-generateDay(wednsday, "Wednsday")
-generateDay(thursday, "Thursday")
-generateDay(friday, "Friday")
-generateDay(saturday, "Saturday")
-generateDay(sunday, "Sunday")
+generateDay("Monday")
+generateDay("Tuesday")
+generateDay("Wednsday")
+generateDay("Thursday")
+generateDay("Friday")
+generateDay("Saturday")
+generateDay("Sunday")
